@@ -1,0 +1,59 @@
+package homework;
+
+public class Cat2 {
+	String name;
+	String fluffiness;
+	String color;
+	int age;
+	int legs;
+	
+	
+	
+	
+	public Cat2(String name1, String fluffiness1, String color1,int age1, int legs1) {
+		name = name1;
+		fluffiness = fluffiness1;
+		color = color1;
+		age = age1;
+		legs = legs1;
+	}
+	
+	
+	
+	public void sleep() {
+		System.out.println("Found a "+color+" cat sleeping the street!");}
+	
+	
+	public void tiredness() {
+		System.out.println("The cat is "+age+" years old");
+	}
+	
+	public void health(){
+		System.out.println(""+name+" has "+legs+" legs, make sure it doesn't get any less!");
+	}
+	
+	public void brushing() {
+		System.out.println(""+name+" is "+fluffiness+" so pay attention to brushing");
+	}
+	
+	
+
+	
+	
+	public static void main(String[] args) {
+		Cat2 c1 = new Cat2("Loki","Very Fluffy","Grey",2,4);
+		Cat2 c2 = new Cat2("Princess","bald","White",3,3);
+		
+		
+		c1.brushing();
+		c1.sleep();
+		c1.tiredness();
+		c1.health();
+		c2.brushing();
+		c2.sleep();
+		c2.tiredness();
+		c2.health();
+		
+		
+	}
+}
